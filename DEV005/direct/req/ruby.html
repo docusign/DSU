@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Envelope with Direct Documents - Ruby Example</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism-coy.min.css" integrity="sha512-CKzEMG9cS0+lcH4wtn/UnxnmxkaTFrviChikDEk1MAWICCSN59sDWIF0Q5oDgdG9lxVrvbENSV1FtjLiBnMx7Q==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/plugins/line-numbers/prism-line-numbers.min.css" integrity="sha512-cbQXwDFK7lj2Fqfkuxbo5iD1dSbLlJGXGpfTDqbggqjHJeyzx88I3rfwjS38WJag/ihH7lzuGlGHpDBymLirZQ==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/plugins/line-highlight/prism-line-highlight.min.css" integrity="sha512-/yZlirVRhdToT7oiRODRoRwgYMwFnZYvUdie2MNHpv9XMIeWtwoVBqkkkQPOy9A+ZDYKysodYzr9cqsU7bsH0Q==" crossorigin="anonymous" />
+</head>
+<body class="line-numbers">
+<pre><code class="language-ruby">require "uri"
+require "net/http"
+
+url = URI("https://demo.docusign.net/restapi//v2.1/accounts/ae717d1b-xxxx-xxxx-xxxx-619d4e4b59d1/envelopes")
+
+https = Net::HTTP.new(url.host, url.port)
+https.use_ssl = true
+
+request = Net::HTTP::Post.new(url)
+request["Content-Type"] = "application/json"
+request["Authorization"] = "Bearer eyJ0eX...bDht_A"
+request.body = "{\n  \"emailSubject\": \"Please DocuSign: Disclosure and Project Plan\",\n  \"documents\": [\n    {\n      \"name\": \"Disclosure\", \n      \"fileExtension\": \"html\",\n      \"documentId\": \"1\"\n    },\n    {\n      \"name\": \"Scope of Work\", \n      \"fileExtension\": \"docx\",\n      \"documentId\": \"2\"\n    },\n    {\n      \"name\": \"Project Illustrations\", \n      \"fileExtension\": \"pdf\",\n      \"documentId\": \"3\"\n    }\n  ],\n  \"recipients\": {\n    \"signers\": [\n      {\n        \"email\": \"anya.fabre@example.com\",\n        \"name\": \"Anya Fabre\",\n        \"recipientId\": \"1\",\n        \"routingOrder\": \"1\",\n        \"tabs\": {\n          \"signHereTabs\": [\n            {\n              \"anchorString\": \"**signature_1**\",\n              \"anchorUnits\": \"pixels\",\n              \"anchorXOffset\": \"20\",\n              \"anchorYOffset\": \"10\"\n            },\n            {\n              \"anchorString\": \"/sn1/\",\n              \"anchorUnits\": \"pixels\",\n              \"anchorXOffset\": \"20\",\n              \"anchorYOffset\": \"10\"\n            }\n          ]\n        }\n      }\n    ],\n    \"carbonCopies\": [\n      {\n        \"email\": \"carlos.nunez@example.com\",\n        \"name\": \"Carlos Nunez\",\n        \"recipientId\": \"2\",\n        \"routingOrder\": \"2\"\n      }\n    ]\n  },\n  \"status\": \"sent\"\n}"
+
+response = https.request(request)
+puts response.read_body
+</code></pre>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/prism.min.js" integrity="sha512-9+422Bs3A87UkWfp+qV80Nfv9arhbCXKY1rxrF2seorI36mIIstMiuBfyKLF1yH1nnzQkEWq2xrzT4XU3Z+vrA==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/plugins/line-numbers/prism-line-numbers.min.js" integrity="sha512-1oLZvExT5RaW4q2GgvRPf+XzVVGmsKirfZBRN7aifdOpvZ1L9idEncfMFlfHiQNGBA+Sev+alscSAT/xQ0rwXA==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-Q3qGP1uJL/B0sEmu57PKXjCirgPKMbg73OLRbTJ6lfHCVU5zkHqmcTI5EV2fSoPV1MHdKsCBE7m/aS6q0pPjRQ==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/plugins/line-highlight/prism-line-highlight.min.js" integrity="sha512-bteQ1XlrEhUJh3mGgo0bneDWpfAAfGxE2lIVPNUolk26uqqsMwHiH+CeWCCURtT3yrCsvgQP7xrdjWTMMopObQ==" crossorigin="anonymous"></script>
+</body>
+</html>
