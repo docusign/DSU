@@ -20,7 +20,7 @@
   request = Net::HTTP::Post.new(url)
   request["Authorization"] = "Bearer eyJ0eX...bDht_A"
   request["Content-Type"] = "application/json"
-  request.body = "{\n  \"emailSubject\": \"Please DocuSign: NDA\",\n  \"status\": \"sent\",\n  \"templateId\": \"834d82dd-xxxx-xxxx-xxxx-c37f17728dda\",\n  \"templateRoles\": [\n    {\n      \"email\": \"anya.fabre@example.com\",\n      \"name\": \"Anya Fabre\",\n      \"roleName\": \"Client\"\n    },\n    {\n      \"email\": \"carlos.nunez@example.com\",\n      \"name\": \"Carlos Nunez\",\n      \"roleName\": \"Reviewer\"\n    }\n  ]\n}"
+  request.body = "{\n  \"status\": \"sent\",\n  \"templateId\": \"834d82dd-xxxx-xxxx-xxxx-c37f17728dda\",\n  \"templateRoles\": [\n    {\n      \"email\": \"anya.fabre@example.com\",\n      \"name\": \"Anya Fabre\",\n      \"roleName\": \"Client\"\n    },\n    {\n      \"email\": \"carlos.nunez@example.com\",\n      \"name\": \"Carlos Nunez\",\n      \"roleName\": \"Reviewer\"\n    }\n  ]\n}"
   
   response = https.request(request)
   puts response.read_body</code></pre>

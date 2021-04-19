@@ -14,7 +14,7 @@
   var request = new RestRequest(Method.POST);
   request.AddHeader("Authorization", "Bearer eyJ0eX...bDht_A");
   request.AddHeader("Content-Type", "application/json");
-  request.AddParameter("application/json", "{\n  \"emailSubject\": \"Please DocuSign: NDA\",\n  \"status\": \"sent\",\n  \"templateId\": \"834d82dd-xxxx-xxxx-xxxx-c37f17728dda\",\n  \"templateRoles\": [\n    {\n      \"email\": \"anya.fabre@example.com\",\n      \"name\": \"Anya Fabre\",\n      \"roleName\": \"Client\"\n    },\n    {\n      \"email\": \"carlos.nunez@example.com\",\n      \"name\": \"Carlos Nunez\",\n      \"roleName\": \"Reviewer\"\n    }\n  ]\n}",  ParameterType.RequestBody);
+  request.AddParameter("application/json", "{\n  \"status\": \"sent\",\n  \"templateId\": \"834d82dd-xxxx-xxxx-xxxx-c37f17728dda\",\n  \"templateRoles\": [\n    {\n      \"email\": \"anya.fabre@example.com\",\n      \"name\": \"Anya Fabre\",\n      \"roleName\": \"Client\"\n    },\n    {\n      \"email\": \"carlos.nunez@example.com\",\n      \"name\": \"Carlos Nunez\",\n      \"roleName\": \"Reviewer\"\n    }\n  ]\n}",  ParameterType.RequestBody);
   IRestResponse response = client.Execute(request);
   Console.WriteLine(response.Content);</code></pre>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/prism.min.js" integrity="sha512-9+422Bs3A87UkWfp+qV80Nfv9arhbCXKY1rxrF2seorI36mIIstMiuBfyKLF1yH1nnzQkEWq2xrzT4XU3Z+vrA==" crossorigin="anonymous"></script>
