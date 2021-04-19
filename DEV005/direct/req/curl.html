@@ -15,22 +15,25 @@
   --data-raw '{
     "emailSubject": "Please DocuSign: Disclosure and Project Plan",
     "documents": [
-      {
-        "name": "Disclosure", 
-        "fileExtension": "html",
-        "documentId": "1"
-      },
-      {
-        "name": "Scope of Work", 
-        "fileExtension": "docx",
-        "documentId": "2"
-      },
-      {
-        "name": "Project Illustrations", 
-        "fileExtension": "pdf",
-        "documentId": "3"
-      }
-    ],
+    {
+      "name": "Disclosure", 
+      "documentBase64": {{ document bytes }},
+      "fileExtension": "html",
+      "documentId": "1"
+    },
+    {
+      "name": "Scope of Work", 
+      "documentBase64": {{ document bytes }},
+      "fileExtension": "docx",
+      "documentId": "2"
+    },
+    {
+      "name": "Project Illustrations", 
+      "documentBase64": {{ document bytes }},
+      "fileExtension": "pdf",
+      "documentId": "3"
+    }
+  ],
     "recipients": {
       "signers": [
         {
