@@ -16,15 +16,13 @@
   "username": "{username}",
   "password": "{password}",
   "includeHMAC": "true",
+  "allowEnvelopePublish": "true",
   "enableLog": "true",
   "requiresAcknowledgement": "true",
-  "envelopeEvents": [
-    "Declined",
-    "Completed"
-  ],
-  "recipientEvents": [
-    "Declined",
-    "Completed"
+  "deliveryMode": "SIM",
+  "events": [
+    "envelope-sent",
+    "recipient-completed"
   ],
   "allUsers": "true",
   "eventData": {

@@ -14,7 +14,7 @@
   "configurationType": "custom",
   "urlToPublishTo": "https://proxy.example.com/",
   "name": "General Feed",
-  "allowEnvelopePublish": "false",
+  "allowEnvelopePublish": "true",
   "enableLog": "true",
   "includeDocuments": "false",
   "includeCertificateOfCompletion": "false",
@@ -25,13 +25,10 @@
   "includeHMAC": "true",
   "includeEnvelopeVoidReason": "false",
   "includeSenderAccountasCustomField": "false",
-  "envelopeEvents": [
-      "Declined",
-      "Completed"
-  ],
-  "recipientEvents": [
-      "Declined",
-      "Completed"
+  "deliveryMode": "SIM",
+  "events": [
+    "envelope-sent",
+    "recipient-completed"
   ],
   "soapNamespace": "",
   "allUsers": "true",
