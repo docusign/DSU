@@ -13,8 +13,14 @@
   "name": "General Feed",
   "configurationType": "custom",
   "urlToPublishTo": "https://proxy.example.com/",
+  "allowEnvelopePublish": "true",
   "enableLog": "true",
   "requiresAcknowledgement": "true",
+  "deliveryMode": "SIM",
+  "events": [
+    "envelope-sent",
+    "recipient-completed"
+  ],
   "envelopeEvents": [
     "Declined",
     "Completed"
