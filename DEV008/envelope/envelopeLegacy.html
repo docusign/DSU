@@ -38,11 +38,14 @@
     },
     "includeDocuments": "false",
     "loggingEnabled": "true",
-    "deliveryMode": "SIM",
-    "events": [
-      "envelope-sent",
-      "recipient-completed"
-    ]
+    "recipientEvents": [
+      {
+        "recipientEventStatusCode": "Sent"
+      },
+      {
+        "recipientEventStatusCode": "Completed"
+      }
+    ],
     "requireAcknowledgment": "true",
     "url": "https://proxy.example.com"
   },
