@@ -16,14 +16,11 @@
   },
   "includeDocuments": "false",
   "loggingEnabled": "true",
-  "recipientEvents": [
-    {
-      "recipientEventStatusCode": "Sent"
-    },
-    {
-      "recipientEventStatusCode": "Completed"
-    }
-  ],
+  "deliveryMode": "SIM",
+  "events": [
+    "envelope-sent",
+    "recipient-completed"
+  ]
   "requireAcknowledgment": "true",
   "url": "https://proxy.example.com"
 },</code></pre>
