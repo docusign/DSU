@@ -1,0 +1,16 @@
+  "documents": [
+    {
+      "documentBase64": "<Base64BytesHere>",
+      "documentId": "1",
+      "fileExtension": ".pdf",
+      "name": "myDocument",  // this would equate to a file named myDocument.pdf
+      "order": "1"
+    },
+    {
+      "documentBase64": "<Base64BytesHere>",
+      "documentId": "2",
+      "fileExtension": ".pdf",
+      "name": "anotherDocument",
+      "order": "2"
+    }
+  ]
