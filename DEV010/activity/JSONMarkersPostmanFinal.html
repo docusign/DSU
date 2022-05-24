@@ -16,17 +16,77 @@
   "recipients": {
     "signers": [{
       "name": "Michika Sato",
-      "email": " {{ your email address }} ",
+      "email": "dsu.sasha+ms@gmail.com",
       "routingOrder": "1",
       "recipientId": "1",
-      "roleName": "Signer1"
+      "roleName": "Signer1",
+      "tabs": {
+        "signHereTabs": [{
+            "name": "SignHere",
+            "tabLabel": "Signer1SignatureTab",
+            "documentId": "1",
+            "recipientId": "1",
+            "pageNumber": "1"
+        }],
+        "fullNameTabs": [{
+            "name": "SignHere",
+            "tabLabel": "Signer1FullNameTab",
+            "documentId": "1",
+            "recipientId": "1",
+            "pageNumber": "1"
+        }],
+        "textTabs": [{
+            "name": "SignHere",
+            "tabLabel": "Signer1TitleTextTab",
+            "documentId": "1",
+            "recipientId": "1",
+            "pageNumber": "1"
+        }],
+        "dateSignedTabs": [{
+            "name": "SignHere",
+            "tabLabel": "Signer1DateSignedTab",
+            "documentId": "1",
+            "recipientId": "1",
+            "pageNumber": "1"
+        }]
+      }
     },
     {
       "name": "William Harris",
       "email": "william.harris@mailinator.com",
       "routingOrder": "2",
       "recipientId": "2",
-      "roleName": "Signer2"
+      "roleName": "Signer2",
+      "tabs": {
+        "signHereTabs": [{
+            "name": "SignHere",
+            "tabLabel": "Signer2SignatureTab",
+            "documentId": "1",
+            "recipientId": "2",
+            "pageNumber": "1"
+        }],
+        "fullNameTabs": [{
+            "name": "SignHere",
+            "tabLabel": "Signer2FullNameTab",
+            "documentId": "1",
+            "recipientId": "2",
+            "pageNumber": "1"
+        }],
+        "textTabs": [{
+            "name": "SignHere",
+            "tabLabel": "Signer2TitleTextTab",
+            "documentId": "1",
+            "recipientId": "2",
+            "pageNumber": "1"
+        }],
+        "dateSignedTabs": [{
+            "name": "SignHere",
+            "tabLabel": "Signer2DateSignedTab",
+            "documentId": "1",
+            "recipientId": "2",
+            "pageNumber": "1"
+        }]
+      }
     }],
     "carbonCopies": [{
       "name": "Robin Meyer",
@@ -34,72 +94,6 @@
       "routingOrder": "3",
       "recipientId": "3"
     }]
-  },
-  "tabs": {
-    "signHereTabs": [
-      {
-        "name": "SignHere",
-        "tabLabel": "Signer1SignatureTab",
-        "documentId": "1",
-        "recipientId": "1",
-        "pageNumber": "1"
-      },
-      {
-        "name": "SignHere",
-        "tabLabel": "Signer2SignatureTab",
-        "documentId": "1",
-        "recipientId": "2",
-        "pageNumber": "1"
-      }
-    ],
-    "fullNameTabs": [
-      {
-        "name": "SignHere",
-        "tabLabel": "Signer1FullNameTab",
-        "documentId": "1",
-        "recipientId": "1",
-        "pageNumber": "1"
-      },
-      {
-        "name": "SignHere",
-        "tabLabel": "Signer2FullNameTab",
-        "documentId": "1",
-        "recipientId": "2",
-        "pageNumber": "1"
-      }
-    ],
-    "textTabs": [
-      {
-        "name": "SignHere",
-        "tabLabel": "Signer1TitleTextTab",
-        "documentId": "1",
-        "recipientId": "1",
-        "pageNumber": "1"
-      },
-      {
-        "name": "SignHere",
-        "tabLabel": "Signer2TitleTextTab",
-        "documentId": "1",
-        "recipientId": "2",
-        "pageNumber": "1"
-      }
-    ],
-    "dateSignedTabs": [
-      {
-        "name": "SignHere",
-        "tabLabel": "Signer1DateSignedTab",
-        "documentId": "1",
-        "recipientId": "1",
-        "pageNumber": "1"
-      },
-      {
-        "name": "SignHere",
-        "tabLabel": "Signer2DateSignedTab",
-        "documentId": "1",
-        "recipientId": "2",
-        "pageNumber": "1"
-      }
-    ],
   },
   "documents": [{
     "documentId": "1",
@@ -148,22 +142,22 @@
             &lt;/div&gt;\n
             &lt;div style=\"margin: .3em 0 .7em 0\"&gt;\n
               &lt;div style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;white-space: normal;word-wrap: break-word;margin: 0;display: inherit;line-height: 20px;display:inline;\"&gt;\n
-                &lt;span style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;display:inline;\"&gt;By: &lt;/span&gt; {{ \"tabLabel\": \"Signer1SignatureTab\" }}\n
+                &lt;span style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;display:inline;\"&gt;By: &lt;/span&gt; {{ \"tabLabel\": \"Signer1SignatureTab\" }} \n
               &lt;/div&gt;\n
             &lt;/div&gt;\n
             &lt;div style=\"margin: .3em 0 .7em 0\"&gt;\n
               &lt;div style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;white-space: normal;word-wrap: break-word;margin: 0;display: inherit;line-height: 20px;;display:inline;\"&gt;\n
-                &lt;span style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;display:inline;\"&gt;Printed Name: &lt;/span&gt; {{ \"tabLabel\": \"Signer1FullNameTab\" }}\n
+                &lt;span style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;display:inline;\"&gt;Printed Name: &lt;/span&gt; {{ \"tabLabel\": \"Signer1FullNameTab\" }} \n
               &lt;/div&gt;\n
             &lt;/div&gt;\n
             &lt;div style=\"margin: .3em 0 .7em 0\"&gt;\n
               &lt;div style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;white-space: normal;word-wrap: break-word;margin: 0;display: inherit;line-height: 20px;;display:inline;\"&gt;\n
-                &lt;span style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;display:inline;\"&gt;Title: &lt;/span&gt; {{ \"tabLabel\": \"Signer1TitleTextTab\" }}\n
+                &lt;span style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;display:inline;\"&gt;Title: &lt;/span&gt; {{ \"tabLabel\": \"Signer1TitleTextTab\" }} \n
               &lt;/div&gt;\n
             &lt;/div&gt;\n
           &lt;div style=\"margin: .3em 0 .7em 0\"&gt;\n
             &lt;div style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;white-space: normal;word-wrap: break-word;margin: 0;display: inherit;line-height: 20px;;display:inline;\"&gt;\n
-              &lt;span style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;display:inline;\"&gt;Dated: &lt;/span&gt; {{ \"tabLabel\": \"Signer1DateSignedTab\" }}\n
+              &lt;span style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;display:inline;\"&gt;Dated: &lt;/span&gt; {{ \"tabLabel\": \"Signer1DateSignedTab\" }} \n
             &lt;/div&gt;\n
           &lt;/div&gt;\n
         &lt;/div&gt;\n
@@ -175,22 +169,22 @@
           &lt;/div&gt;\n
           &lt;div style=\"margin: .3em 0 .7em 0\"&gt;\n
             &lt;div style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;white-space: normal;word-wrap: break-word;margin: 0;display: inherit;line-height: 20px;;display:inline;\"&gt;\n
-              &lt;span style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;display:inline;\"&gt;By: &lt;/span&gt; {{ \"tabLabel\": \"Signer2SignatureTab\" }}\n
+              &lt;span style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;display:inline;\"&gt;By: &lt;/span&gt; {{ \"tabLabel\": \"Signer2SignatureTab\" }} \n
             &lt;/div&gt;\n
           &lt;/div&gt;\n
           &lt;div style=\"margin: .3em 0 .7em 0\"&gt;\n
             &lt;div style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;white-space: normal;word-wrap: break-word;margin: 0;display: inherit;line-height: 20px;;display:inline;\"&gt;\n
-              &lt;span style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;display:inline;\"&gt;Printed Name: &lt;/span&gt; {{ \"tabLabel\": \"Signer2FullNameTab\" }}\n
+              &lt;span style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;display:inline;\"&gt;Printed Name: &lt;/span&gt; {{ \"tabLabel\": \"Signer2FullNameTab\" }} \n
             &lt;/div&gt;\n
           &lt;/div&gt;\n
           &lt;div style=\"margin: .3em 0 .7em 0\"&gt;\n
             &lt;div style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;white-space: normal;word-wrap: break-word;margin: 0;display: inherit;line-height: 20px;;display:inline;\"&gt;\n
-              &lt;span style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;display:inline;\"&gt;Title: &lt;/span&gt; {{ \"tabLabel\": \"Signer2TitleTextTab\" }}\n
+              &lt;span style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;display:inline;\"&gt;Title: &lt;/span&gt; {{ \"tabLabel\": \"Signer2TitleTextTab\" }} \n
             &lt;/div&gt;\n
           &lt;/div&gt;\n
           &lt;div style=\"margin: .3em 0 .7em 0\"&gt;\n
             &lt;div style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;white-space: normal;word-wrap: break-word;margin: 0;display: inherit;line-height: 20px;;display:inline;\"&gt;\n
-              &lt;span style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;display:inline;\"&gt;Dated: &lt;/span&gt; {{ \"tabLabel\": \"Signer2DateSignedTab\" }}\n
+              &lt;span style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;display:inline;\"&gt;Dated: &lt;/span&gt; {{ \"tabLabel\": \"Signer2DateSignedTab\" }} \n
             &lt;/div&gt;\n
           &lt;/div&gt;\n
         &lt;/div&gt;\n
