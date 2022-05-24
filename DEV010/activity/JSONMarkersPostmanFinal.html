@@ -35,6 +35,72 @@
       "recipientId": "3"
     }]
   },
+  "tabs": {
+    "signHereTabs": [
+      {
+        "name": "SignHere",
+        "tabLabel": "Signer1SignatureTab",
+        "documentId": "1",
+        "recipientId": "1",
+        "pageNumber": "1"
+      },
+      {
+        "name": "SignHere",
+        "tabLabel": "Signer2SignatureTab",
+        "documentId": "1",
+        "recipientId": "2",
+        "pageNumber": "1"
+      }
+    ],
+    "fullNameTabs": [
+      {
+        "name": "SignHere",
+        "tabLabel": "Signer1FullNameTab",
+        "documentId": "1",
+        "recipientId": "1",
+        "pageNumber": "1"
+      },
+      {
+        "name": "SignHere",
+        "tabLabel": "Signer2FullNameTab",
+        "documentId": "1",
+        "recipientId": "2",
+        "pageNumber": "1"
+      }
+    ],
+    "textTabs": [
+      {
+        "name": "SignHere",
+        "tabLabel": "Signer1TitleTextTab",
+        "documentId": "1",
+        "recipientId": "1",
+        "pageNumber": "1"
+      },
+      {
+        "name": "SignHere",
+        "tabLabel": "Signer2TitleTextTab",
+        "documentId": "1",
+        "recipientId": "2",
+        "pageNumber": "1"
+      }
+    ],
+    "dateSignedTabs": [
+      {
+        "name": "SignHere",
+        "tabLabel": "Signer1DateSignedTab",
+        "documentId": "1",
+        "recipientId": "1",
+        "pageNumber": "1"
+      },
+      {
+        "name": "SignHere",
+        "tabLabel": "Signer2DateSignedTab",
+        "documentId": "1",
+        "recipientId": "2",
+        "pageNumber": "1"
+      }
+    ],
+  },
   "documents": [{
     "documentId": "1",
     "htmlDefinition": {
@@ -82,22 +148,22 @@
             &lt;/div&gt;\n
             &lt;div style=\"margin: .3em 0 .7em 0\"&gt;\n
               &lt;div style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;white-space: normal;word-wrap: break-word;margin: 0;display: inherit;line-height: 20px;display:inline;\"&gt;\n
-                &lt;span style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;display:inline;\"&gt;By: &lt;/span&gt;&lt;ds-signature data-ds-role=\"Signer1\" /&gt;\n
+                &lt;span style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;display:inline;\"&gt;By: &lt;/span&gt; {{ "tabLabel": "Signer1SignatureTab" }}\n
               &lt;/div&gt;\n
             &lt;/div&gt;\n
             &lt;div style=\"margin: .3em 0 .7em 0\"&gt;\n
               &lt;div style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;white-space: normal;word-wrap: break-word;margin: 0;display: inherit;line-height: 20px;;display:inline;\"&gt;\n
-                &lt;span style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;display:inline;\"&gt;Printed Name: &lt;/span&gt;&lt;ds-fullname data-ds-role=\"Signer1\" /&gt;\n
+                &lt;span style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;display:inline;\"&gt;Printed Name: &lt;/span&gt; {{ "tabLabel": "Signer1FullNameTab" }}\n
               &lt;/div&gt;\n
             &lt;/div&gt;\n
             &lt;div style=\"margin: .3em 0 .7em 0\"&gt;\n
               &lt;div style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;white-space: normal;word-wrap: break-word;margin: 0;display: inherit;line-height: 20px;;display:inline;\"&gt;\n
-                &lt;span style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;display:inline;\"&gt;Title: &lt;/span&gt;&lt;ds-title data-ds-role=\"Signer1\" /&gt;\n
+                &lt;span style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;display:inline;\"&gt;Title: &lt;/span&gt; {{ "tabLabel": "Signer1TitleTextTab" }}\n
               &lt;/div&gt;\n
             &lt;/div&gt;\n
           &lt;div style=\"margin: .3em 0 .7em 0\"&gt;\n
             &lt;div style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;white-space: normal;word-wrap: break-word;margin: 0;display: inherit;line-height: 20px;;display:inline;\"&gt;\n
-              &lt;span style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;display:inline;\"&gt;Dated: &lt;/span&gt;&lt;ds-date-signed data-ds-role=\"Signer1\" /&gt;\n
+              &lt;span style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;display:inline;\"&gt;Dated: &lt;/span&gt; {{ "tabLabel": "Signer1DateSignedTab" }}\n
             &lt;/div&gt;\n
           &lt;/div&gt;\n
         &lt;/div&gt;\n
@@ -109,22 +175,22 @@
           &lt;/div&gt;\n
           &lt;div style=\"margin: .3em 0 .7em 0\"&gt;\n
             &lt;div style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;white-space: normal;word-wrap: break-word;margin: 0;display: inherit;line-height: 20px;;display:inline;\"&gt;\n
-              &lt;span style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;display:inline;\"&gt;By: &lt;/span&gt;&lt;ds-signature data-ds-role=\"Signer2\" /&gt;\n
+              &lt;span style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;display:inline;\"&gt;By: &lt;/span&gt; {{ "tabLabel": "Signer2SignatureTab" }}\n
             &lt;/div&gt;\n
           &lt;/div&gt;\n
           &lt;div style=\"margin: .3em 0 .7em 0\"&gt;\n
             &lt;div style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;white-space: normal;word-wrap: break-word;margin: 0;display: inherit;line-height: 20px;;display:inline;\"&gt;\n
-              &lt;span style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;display:inline;\"&gt;Printed Name: &lt;/span&gt;&lt;ds-fullname data-ds-role=\"Signer2\" /&gt;\n
+              &lt;span style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;display:inline;\"&gt;Printed Name: &lt;/span&gt; {{ "tabLabel": "Signer2FullNameTab" }}\n
             &lt;/div&gt;\n
           &lt;/div&gt;\n
           &lt;div style=\"margin: .3em 0 .7em 0\"&gt;\n
             &lt;div style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;white-space: normal;word-wrap: break-word;margin: 0;display: inherit;line-height: 20px;;display:inline;\"&gt;\n
-              &lt;span style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;display:inline;\"&gt;Title: &lt;/span&gt;&lt;ds-title data-ds-role=\"Signer2\" /&gt;\n
+              &lt;span style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;display:inline;\"&gt;Title: &lt;/span&gt; {{ "tabLabel": "Signer2TitleTextTab" }}\n
             &lt;/div&gt;\n
           &lt;/div&gt;\n
           &lt;div style=\"margin: .3em 0 .7em 0\"&gt;\n
             &lt;div style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;white-space: normal;word-wrap: break-word;margin: 0;display: inherit;line-height: 20px;;display:inline;\"&gt;\n
-              &lt;span style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;display:inline;\"&gt;Dated: &lt;/span&gt;&lt;ds-date-signed data-ds-role=\"Signer2\" /&gt;\n
+              &lt;span style=\"font-family: 'Times New Roman','Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;display:inline;\"&gt;Dated: &lt;/span&gt; {{ "tabLabel": "Signer2DateSignedTab" }}\n
             &lt;/div&gt;\n
           &lt;/div&gt;\n
         &lt;/div&gt;\n
