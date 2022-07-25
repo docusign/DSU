@@ -20,13 +20,13 @@
   <script> 
     const options = {
       headers: {
-        'mode': 'no-cors',
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Methods': 'DELETE, POST, GET, OPTIONS',
-        'Access-Control-Allow-Headers': 'Content-Type, Authorization, X-Requested-With'
+        // 'mode': 'no-cors',
+        // 'Access-Control-Allow-Methods': 'DELETE, POST, GET, OPTIONS',
+        // 'Access-Control-Allow-Headers': 'Content-Type, Authorization, X-Requested-With',
+        'Access-Control-Allow-Origin': '*'
       }
     } 
-    fetch('http://swapi.co/api/planets/1', options)
+    fetch('https://swapi.co/api/planets/1/', options)
       .then(response => response.json())
       .then((response) => {
         console.log(response);
