@@ -10,40 +10,41 @@
 </head>
 <body class="line-numbers">
 <pre><code class="language-json">{
+  "accountId": "ae717d1b-xxxx-xxxx-xxxx-619d4e4b59d1",
+  "clickwrapId": "f0b315ba-xxxx-xxxx-xxxx-210a028c73cc",
   "clientUserId": "464f7988-xxxx-xxxx-xxxx-781ee556ab7a",
-  "documentData": {
-    "email": "leetan@example.com", 
-    "fullName": "Lee Tan",
-    "company": "Tally Inc"
+  "agreementId": "c8fb66d0-xxxx-xxxx-xxxx-2bc3729b59a6",
+  "documents": [
+      {
+        "documentName": "Volunteer Waiver of Liability Form.pdf",
+        "order": 1,
+        "fileExtension": "pdf"
+      }
+  ],
+  "consumerDisclosureEnabled": true,
+  "agreementUrl": "https://demo.docusign.net/clickapi/v1/redeem?agreementToken=AcTZ...Ulw1",
+  "createdOn": "2022-11-15T21:05:43.0557976Z",
+  "status": "created",
+  "versionId": "46fcb512-xxxx-xxxx-xxxx-9f4254c29fe0",
+  "versionNumber": 1,
+  "settings": {
+      "displayName": "Volunteer Release and Waiver of Liability",
+      "hasDeclineButton": false,
+      "actionButtonAlignment": "left",
+      "mustRead": false,
+      "mustView": false,
+      "requireAccept": true,
+      "downloadable": false,
+      "sendToEmail": false,
+      "allowClientOnly": false,
+      "format": "inline",
+      "documentDisplay": "document",
+      "statementAlignment": "bottom"
   },
-  "style": {
-    "header": {
-      "display": "none"
-    },
-    "container": {
-      "backgroundColor": "#fff",
-      "borderWidth": "0"
-    },
-    "agreementStatement": {
-      "fontWeight": "normal"
-    },
-    "documentLink": {
-      "color": "#333",
-      "fontWeight": "normal"
-    },
-    "agreeButton": {
-      "boxShadow": "0 2px 2px 2px rgba(0, 0, 0, .2)",
-      "height": "40px",
-      "width": "100%",
-      "margin": "10px 0",
-      "padding": "3px 0",
-      "fontSize": "16px",
-      "fontWeight": "bold",
-      "fontFamily": "Helvetica, Arial, sans-serif",
-      "textDecoration": "underline",
-      "backgroundColor": "red",
-      "borderRadius": "20px"
-    }
+  "documentData": {
+      "email": "leetan@example.com",
+      "fullName": "Lee Tan",
+      "company": "Tally Inc"
   }
 }</code></pre>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/prism.min.js" integrity="sha512-9+422Bs3A87UkWfp+qV80Nfv9arhbCXKY1rxrF2seorI36mIIstMiuBfyKLF1yH1nnzQkEWq2xrzT4XU3Z+vrA==" crossorigin="anonymous"></script>
