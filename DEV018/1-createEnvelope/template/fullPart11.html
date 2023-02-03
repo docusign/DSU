@@ -9,26 +9,47 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/plugins/line-highlight/prism-line-highlight.min.css" integrity="sha512-/yZlirVRhdToT7oiRODRoRwgYMwFnZYvUdie2MNHpv9XMIeWtwoVBqkkkQPOy9A+ZDYKysodYzr9cqsU7bsH0Q==" crossorigin="anonymous" />
 </head>
 <body class="line-numbers">
-<pre data-line="2,6,10-20"><code class="language-json">{
+<pre data-line="2,17,22-36"><code class="language-json">{
   "status": "sent",
-  "templateId": "834d82dd-xxxx-xxxx-xxxx-c37f17728dda",
-  "templateRoles": [
+  "compositeTemplates": [
     {
-      "clientUserId": "1",
-      "email": "audreuser@example.com",
-      "name": "Audre User",
-      "roleName": "Signer1",
-      "identityVerification":{
-        "workflowId": "261bc49f-d949-46b0-80bb-22cb9b53b652",  //This is the GUID value for every account
-        "inputOptions": [{
-          "name": "phone_number_list",
-          "valueType": "PhoneNumberList",
-          "phoneNumberList": [{
-            "Number": "{{SMS Delivery Number}}",
-            "CountryCode": "1"
-          }]
-        }]
-      }
+      "serverTemplates": [
+        {
+          "sequence": "1",
+          "templateId": "834d82dd-xxxx-xxxx-xxxx-c37f17728dda",
+        }
+      ],
+      "inlineTemplates": [
+        {
+          "sequence": "1",
+          "recipients": {
+            "signers": [
+              {
+                "clientUserId": "1",
+                "email": "audreuser@example.com",
+                "name": "Audre User",
+                "roleName": "Signer1",
+                "recipientId": "1",
+                "identityVerification": {
+                  "workflowId": "261bc49f-d949-46b0-80bb-22cb9b53b652",  //This is the GUID value for every account
+                  "inputOptions": [
+                    {
+                      "name": "phone_number_list",
+                      "valueType": "PhoneNumberList",
+                      "phoneNumberList": [
+                        {
+                          "CountryCode": "1",
+                          "Number": "4155550122",
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
     }
   ]
 }</code></pre>
