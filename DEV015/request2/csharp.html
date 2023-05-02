@@ -14,8 +14,9 @@ client.Timeout = -1;
 var request = new RestRequest(Method.POST);
 request.AddHeader("Authorization", "Basic MzI0Yz.....NmNjYg==");
 request.AddHeader("Content-Type", "application/x-www-form-urlencoded");
-request.AddParameter("code", "eyJ0eX.....gK3cGg");
+request.AddParameter("code", "eyJ0eX...gK3cGg");
 request.AddParameter("grant_type", "authorization_code");
+request.AddParameter("code_verifier", "f0832...3f865");
 IRestResponse response = client.Execute(request);
 Console.WriteLine(response.Content);</code></pre>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/prism.min.js" integrity="sha512-9+422Bs3A87UkWfp+qV80Nfv9arhbCXKY1rxrF2seorI36mIIstMiuBfyKLF1yH1nnzQkEWq2xrzT4XU3Z+vrA==" crossorigin="anonymous"></script>

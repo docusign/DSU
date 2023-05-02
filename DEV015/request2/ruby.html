@@ -20,7 +20,7 @@ https.use_ssl = true
 request = Net::HTTP::Post.new(url)
 request["Authorization"] = "Basic MzI0Yz.....NmNjYg=="
 request["Content-Type"] = "application/x-www-form-urlencoded"
-request.body = "code=eyJ0eX.....gK3cGg&amp;grant_type=authorization_code"
+request.body = "code=eyJ0eX...gK3cGg&amp;grant_type=authorization_code&amp;code_verifier=f0832...3f865"
 
 response = https.request(request)
 puts response.read_body</code></pre>

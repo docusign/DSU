@@ -12,7 +12,7 @@
 <pre><code class="language-py">import http.client
 
 conn = http.client.HTTPSConnection("account-d.docusign.com")
-payload = 'code=eyJ0eX.....gK3cGg&amp;grant_type=authorization_code'
+payload = 'code=eyJ0eX...gK3cGg&amp;grant_type=authorization_code&amp;code_verifier=f0832...3f865'
 headers = {
   'Authorization': 'Basic MzI0Yz.....mNjYg==',
   'Content-Type': 'application/x-www-form-urlencoded'

@@ -15,11 +15,12 @@ var options = {
   'url': 'https://account-d.docusign.com/oauth/token',
   'headers': {
     'Authorization': 'Basic MzI0Yz.....NmNjYg==',
-    'Content-Type': 'application/x-www-form-urlencoded'
+    'Content-Type': 'application/x-www-form-urlencoded',
   },
   form: {
-    'code': 'eyJ0eXA.....gK3cGg',
-    'grant_type': 'authorization_code'
+    'code': 'eyJ0eXA...gK3cGg',
+    'grant_type': 'authorization_code',
+    'code_verifier': 'f0832...3f865'
   }
 };
 request(options, function (error, response) {
