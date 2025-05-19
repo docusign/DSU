@@ -1,0 +1,9 @@
+    div.code-toolbar>.toolbar>.toolbar-item>a, div.code-toolbar>.toolbar>.toolbar-item>button, div.code-toolbar>.toolbar>.toolbar-item>span {
+      font-weight: bold; 
+      font-size: 2em;
+      font-family:'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      color: #26065D;
+      border-radius: 0.15em;
+      box-shadow: none;
+      background-color: #CBC2FF;
+    }
